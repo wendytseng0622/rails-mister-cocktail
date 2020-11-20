@@ -1,0 +1,78 @@
+
+<h1 class="text-white"> Mr. Mocktail </h1>
+
+<%= link_to "HOME", root_path, class: "btn btn-ghost"  %>
+
+  <div class=" d-flex row">
+<% @cocktails.each do |cocktail| %>
+
+
+
+
+    <div class="col-4">
+      <div class="card-category m-3"style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+      <%= cocktail.name %>
+     <h2>
+      <% cocktail.doses.each do |dose| %>
+      <li> <%= dose.description %> of <%= dose.ingredient %> </li>
+      <li> ing 2 </li>
+
+      <% end %>
+    </h2>
+    </div>
+    </div>
+<% end %>
+</div>
+
+
+<!-- <div class="card-category" style="background-image: url(https://www.dbackdrop.com/products/black-marble-texture-backdrop-for-photo-studio-d109)">
+  Breakfast
+</div> -->
+
+
+    <!-- <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+       Cocktail 2
+      <h2>
+        <li> ing 1 </li>
+        <li> ing 2 </li>
+       </h2>
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+     Cocktail 3
+       <h2>
+          <li> ing 1 </li>
+          <li> ing 2 </li>
+       </h2>
+   </div>
+
+   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+      Cocktail 4
+
+        <h2>
+          <li> ing 1 </li>
+          <li> ing 2 </li>
+       </h2>
+
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+       Cocktail 5
+         <h2>
+          <li> ing 1 </li>
+          <li> ing 2 </li>
+       </h2>
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+     Cocktail 6
+       <h2>
+          <li> ing 1 </li>
+          <li> ing 2 </li>
+       </h2>
+  </div>
+
+  each
+
+</div>
+ -->

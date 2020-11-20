@@ -1,0 +1,11 @@
+<h1 class="text-white"> create your own 🧉 </h1>
+
+<%= simple_form_for @cocktail do |f| %>
+ <div class="form-input">
+  <%= f.input :name %>
+</div>
+
+  <%= f.submit "Add this", class: "btn btn-ghost" %>
+<% end %>
+
+

@@ -1,0 +1,17 @@
+
+<h1 class="text-white"><%= @cocktail.name %></h1>
+
+<div class="img">
+<%= image_tag "cocktail.jpeg", alt: "christmas cocktail" %>
+</div>
+
+<div class="ingredient_info">
+  <li> ingredient 1 </li>
+  <li> ingredient 2 </li>
+</div>
+
+<div class="more">
+ <h2> ...more </h2>
+</div>
+
+<%= link_to "HOME", root_path, class: "btn btn-ghost" %>
